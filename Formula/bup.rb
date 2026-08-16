@@ -1,9 +1,8 @@
 class Bup < Formula
   desc "Backup tool (airgap)"
   homepage "https://bup.github.io/"
-  url "https://github.com/ikuo/bup/archive/refs/heads/airgap.tar.gz"
+  url "https://github.com/ikuo/bup/archive/refs/tags/0.33.10-ag1.tar.gz"
   license all_of: ["BSD-2-Clause", "LGPL-2.0-only"]
-  version "0.33.10-0"
 
   depends_on "pandoc" => :build
   depends_on "pkgconf" => :build
