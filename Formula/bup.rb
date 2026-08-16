@@ -16,6 +16,7 @@ class Bup < Formula
 
   def install
     ENV["BUP_PYTHON_CONFIG"] = "#{python3}-config"
+    system "./configure", "--disable-remote"
     system "make", "PREFIX=#{prefix}", "install"
   end
 
